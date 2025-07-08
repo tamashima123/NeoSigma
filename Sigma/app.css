@@ -1,0 +1,24 @@
+ body{
+       height: 200px;
+       width: 90%;
+       background-image: linear-gradient(90deg, rgba(247, 93, 139, 1), rgba(254, 220, 64, 1));
+}
+.daimei{
+       font-size: 150px;
+       padding: 0%;
+       margin:0%;
+       text-align: center;
+}
+.apple{
+       padding: 0%;
+       margin:0%;
+
+}
+.mini{
+       font-size: 1px;
+       text-align: right;
+}
+.backpuyo{
+      background-image: url("backpuyo.jpg");
+;
+}
