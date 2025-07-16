@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset=″utf-8″>
+       <style>
+           body{
+               height: 1000px;
+               width: 90%;
+               background-image: linear-gradient(106deg, rgba(240, 141, 205, 1) 18%, rgba(185, 231, 255, 1) 86%);
+           }
+           #taitoru{
+               font-family: "Century","Times","Times New Roman","serif";
+               font-size: 40px;
+               text-align: center;
+               margin: 0px;
+           }
+           #kekka1{
+               font-size: 20px;
+           }
+           #kekka2{
+               font-size: 50px;
+           }
+       </style>
+   </head>
+   <body>
+       <div id="taitoru">
+           <p>Σ-Calculator</p>
+       </div>
+       <div id="kekka1">
+           <p>計算結果：<span id="kekka2"></span></p>
+       </div>
+       <script>
+           let a=+prompt("計算する数１");
+           let b=+prompt("計算する数２");
+           let c=prompt("行う演算");
+           let d;
+           console.log(c)
+           if(c==="+"){
+               console.log(a+b)
+               d=a+b;    
+           } else if(c==="-"){
+               console.log(a-b)
+               d=a-b;
+           } else if(c==="*"){
+               console.log(a*b)
+               d=a*b;
+           } else if(c==="/"){
+               console.log(a/b)
+               d=a/b;
+           } else{
+               console.log("計算失敗...")
+               d="計算失敗...";
+           }
+           console.log(d);
+           document.getElementById("kekka2").innerHTML=d;
+       </script> 
+   </body>
+</html>
+
+
+
+
