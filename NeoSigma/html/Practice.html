@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>練習用サイト</title>
-    <link rel="shortcut icon" href="C:\Users\tamas\Downloads\NeoSigma\画像\icon.png" type="image/Practice.html">
     <style>
-        body{
-            background-color: aqua;
-        }
+     body{
+       font-family: "monospace";
+       text-align: center;
+       background: linear-gradient(to right,#e60000,#f39800,#fff100,#009944,#0068b7,#1d2088,#920783);
+      }
+     .daimei{
+       padding: 0px;
+       height: 60px;
+       width: 135px;
+       margin: auto;
+       background-color: black;
+       
+color: aliceblue;   
+       font-family: "SimSun","","";
+       text-align: center;
+       font-size: 40px;
+      }
+     #enshuritu{
+       font-family: Georgia;
+      }
+     .mini{
+       font-size:15px;
+       padding: 0px;
+       margin: 0px;
+      }
+     #namebox{
+       margin-bottom: 0px;
+      }
     </style>
   </head>
   <body>
-    <p>練習用</p>
-    <p id="a"></p>
+    <div class="daimei"><p>練習用</p></div>
+    <p>誕生日：2008年12月21日</p> 
+    <p id="moji"></p>
+    <p id="enshuritu">円周率＝3.141592653589793238462643383279502884197169....</p>
+    <p id="namebox">名前<input type="text"></input></p>
+    <p class="mini">例：円周率　太郎</p>
+    <p>目的地<input type="text"></input></p>
+    <p><button onclick="alert ('hello!')">クリックして下さい</button><button ondblclick="alert ('hello!')">ダブルクリックして下さい</button><button onmouseover="alert ('hello!')">マウスを載せて下さい</button><button onmouseout="alert ('hello!')">マウスを載せた後離してして下さい</button></p>  
     <script>
-      let A="Hello World"
-      document.getElementById("a").innerHTML = A;
+      let a="He110!W0r1D!"
+      let b=+window.prompt("足す数１")
+      let c=+window.prompt("足す数２")
+      let d=b+c
+      console.log(d)
+      document.getElementById("moji").innerHTML = d;
     </script>
   </body>
   <footer>
-    <a href="C:\Users\tamas\Downloads\NeoSigma\index.html"><button>Return to TOP</button></a>
+    <a href="index.html"><button>Return to TOP</button></a>
   </footer>
 </html>
